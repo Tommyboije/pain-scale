@@ -148,23 +148,23 @@ class App extends Component {
         </li>
       </ul>
 
-      <span><b>Namn på patient: </b>${this.state.patientName}</span>
+      <span><b>Namn på patienten: </b>${this.state.patientName}</span>
       <br></br>
       <span><b>Ditt namn: </b>${this.state.yourName}</span>
     `;
 
-    const templateParams = {
-      "to_email": this.state.receiverEmailInput,
-      // "to_email": "Tommy.Boije@helsingborg.se",
-      "from_name": "Pain Scale App",
-      "from_email": "max.frederiksen@ecsolutions.se",
-      "reply_to": "max.frederiksen@ecsolutions.se",
-      "to_name": this.state.yourName,
-      "message_html": messageHtml
-    };
+const templateParams = {
+  "to_email": this.state.receiverEmailInput,
+  // "to_email": "Tommy.Boije@helsingborg.se",
+  "from_name": "Pain Scale App",
+  "from_email": "kungshult@helsingborg.se",
+  "reply_to": " kungshult@helsingborg.se",
+  "to_name": this.state.yourName,
+  "message_html": messageHtml
+};
 
-    window.emailjs.send('gmail', 'template_BxjtD38x', templateParams)
-      .then(() => {
+window.emailjs.send('gmail', 'abby_pain_scale', templateParams)
+    .then(() => {
         this.setState({
           sent: 'Bedömning skickad!',
           spinner: false
