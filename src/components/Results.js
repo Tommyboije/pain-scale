@@ -63,7 +63,7 @@ const Results = ({ state, settingsHandler, changeHandler, submitHandler, resultI
                   <input className="input-text" type="text" name="patientName" value={state.patientName} onChange={changeHandler} placeholder="Namn eller rumsnummer"></input>
 
                   <label htmlFor="your-name"><h3 className="sub-title">Sjuksköterska / Läkare</h3></label>
-                  <input className="input-text" type="text" name="yourName" value={state.yourName} onChange={changeHandler} placeholder="Ditt namn"></input>
+                  <input className="input-text" type="text" name="yourName" value={state.yourName} onChange={changeHandler} placeholder="Namn"></input>
                   <div>
                     <div className="bottom-buttons">
                       <div>
