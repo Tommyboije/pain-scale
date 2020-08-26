@@ -148,15 +148,15 @@ class App extends Component {
         </li>
       </ul>
 
-      <span><b>Namn på patienten: </b>${this.state.patientName}</span>
+      <span><b>Patient eller rumsnummer: </b>${this.state.patientName}</span>
       <br></br>
-      <span><b>Ditt namn: </b>${this.state.yourName}</span>
+      <span><b>Patient eller rumsnummer: </b>${this.state.yourName}</span>
     `;
 
 const templateParams = {
   "to_email": this.state.receiverEmailInput,
   // "to_email": "Tommy.Boije@helsingborg.se",
-  "from_name": "Pain Scale App",
+  "from_name": "Smärtskattning",
   "from_email": "kungshult@helsingborg.se",
   "reply_to": " kungshult@helsingborg.se",
   "to_name": this.state.yourName,
